@@ -13,3 +13,11 @@ Console.WriteLine($"Текст:{text}");
 byte[] textBytes = Encoding.UTF8.GetBytes(text);
 Console.WriteLine("Байты текста UTF-8:");
 Console.WriteLine(BitConverter.ToString(textBytes));
+
+string text2 = "Привет";
+byte[] textBytes2 = Encoding.UTF8.GetBytes(text2);
+Console.WriteLine();
+Console.WriteLine($"Текст: {text2}");
+Console.WriteLine($"Количество символов: {text2.Length}");
+Console.WriteLine($"Количество байтов UTF-8: {textBytes2.Length}");
+Console.WriteLine($"Байты: {BitConverter.ToString(textBytes2)}");
